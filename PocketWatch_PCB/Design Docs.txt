@@ -1,0 +1,23 @@
+Functions:
+	Time Change
+	Time Mode
+	On/Off
+	Colin
+	AM/PM
+
+Time Mode:
+	2 Position Switch
+
+Time Change:
+	press and hold select button to enable/disable time change
+	Use Up and down to change value
+
+On/Off:
+	2 Position switch
+	Connects the VCC to the charge/boost board	
+
+Colin:
+	2 leds in parallel
+
+AM/PM:
+	2 separate leds
