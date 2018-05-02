@@ -402,8 +402,8 @@
 <wire x1="-1.1" y1="-1.3" x2="-1.1" y2="1.3" width="0.127" layer="21"/>
 </package>
 <package name="CFS206">
-<pad name="1" x="0" y="0" drill="0.3"/>
-<pad name="2" x="1.1" y="0" drill="0.3"/>
+<pad name="1" x="0" y="0" drill="0.35"/>
+<pad name="2" x="1.1" y="0" drill="0.35"/>
 <circle x="0.55" y="0" radius="0.5" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="0.7" width="0.127" layer="21"/>
 <wire x1="0" y1="0.7" x2="0" y2="6.5" width="0.127" layer="21"/>
@@ -3683,6 +3683,7 @@ Based on the following sources:
 <part name="Q6" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BCX70*" device="SMD" package3d_urn="urn:adsk.eagle:package:28984/2" value=""/>
 <part name="Q7" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BCX70*" device="SMD" package3d_urn="urn:adsk.eagle:package:28984/2" value=""/>
 <part name="Q8" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BCX70*" device="SMD" package3d_urn="urn:adsk.eagle:package:28984/2" value=""/>
+<part name="GND1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3715,8 +3716,8 @@ Based on the following sources:
 <instance part="B_SEL" gate="G$1" x="76.2" y="-86.36"/>
 <instance part="B_UP" gate="G$1" x="76.2" y="-93.98"/>
 <instance part="B_DOWN" gate="G$1" x="76.2" y="-101.6"/>
-<instance part="AM" gate="G$1" x="-45.72" y="-12.7" rot="R270"/>
-<instance part="PM" gate="G$1" x="-45.72" y="-20.32" rot="R270"/>
+<instance part="AM" gate="G$1" x="-45.72" y="-20.32" rot="R270"/>
+<instance part="PM" gate="G$1" x="-45.72" y="-12.7" rot="R270"/>
 <instance part="COLIN1" gate="G$1" x="-45.72" y="2.54" rot="R270"/>
 <instance part="R14" gate="G$1" x="-35.56" y="2.54"/>
 <instance part="R15" gate="G$1" x="-35.56" y="-5.08"/>
@@ -3740,6 +3741,7 @@ Based on the following sources:
 <instance part="Q6" gate="G$1" x="-2.54" y="-99.06"/>
 <instance part="Q7" gate="G$1" x="15.24" y="-99.06"/>
 <instance part="Q8" gate="G$1" x="33.02" y="-99.06"/>
+<instance part="GND1" gate="G$1" x="76.2" y="-111.76"/>
 </instances>
 <busses>
 </busses>
@@ -3905,6 +3907,11 @@ Based on the following sources:
 <junction x="35.56" y="-106.68"/>
 <label x="38.1" y="-106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="78.74" y1="-111.76" x2="91.44" y2="-111.76" width="0.1524" layer="91"/>
+<label x="81.28" y="-111.76" size="1.778" layer="95"/>
+<pinref part="GND1" gate="G$1" pin="P"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -3985,16 +3992,16 @@ Based on the following sources:
 <wire x1="-53.34" y1="-5.08" x2="-53.34" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-12.7" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-20.32" x2="-63.5" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="PM" gate="G$1" pin="C"/>
-<wire x1="-50.8" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="-53.34" y="-20.32"/>
-<pinref part="AM" gate="G$1" pin="C"/>
-<wire x1="-50.8" y1="-12.7" x2="-53.34" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-53.34" y="-12.7"/>
 <pinref part="COLIN2" gate="G$1" pin="C"/>
 <wire x1="-50.8" y1="-5.08" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-5.08"/>
 <label x="-60.96" y="-20.32" size="1.778" layer="95"/>
+<pinref part="AM" gate="G$1" pin="C"/>
+<wire x1="-50.8" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-53.34" y="-20.32"/>
+<pinref part="PM" gate="G$1" pin="C"/>
+<wire x1="-50.8" y1="-12.7" x2="-53.34" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-53.34" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="SV4" gate="G$1" pin="5"/>
@@ -4460,20 +4467,6 @@ Based on the following sources:
 <wire x1="-40.64" y1="-5.08" x2="-43.18" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="AM" gate="G$1" pin="A"/>
-<wire x1="-40.64" y1="-12.7" x2="-43.18" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="PM" gate="G$1" pin="A"/>
-<wire x1="-40.64" y1="-20.32" x2="-43.18" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="TGND" class="0">
 <segment>
 <pinref part="TGND" gate="G$1" pin="P"/>
@@ -4670,6 +4663,20 @@ Based on the following sources:
 <pinref part="U2" gate="A" pin="PC7_(PCINT15)"/>
 <wire x1="101.6" y1="-22.86" x2="114.3" y2="-22.86" width="0.1524" layer="91"/>
 <label x="104.14" y="-22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="PM" gate="G$1" pin="A"/>
+<wire x1="-40.64" y1="-12.7" x2="-43.18" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="AM" gate="G$1" pin="A"/>
+<wire x1="-40.64" y1="-20.32" x2="-43.18" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

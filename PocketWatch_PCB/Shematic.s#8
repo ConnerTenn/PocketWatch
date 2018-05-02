@@ -4798,7 +4798,6 @@ W = angled&lt;p&gt;
 <part name="R7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
 <part name="R8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
 <part name="VCC" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
 <part name="COLIN2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="LD260" package3d_urn="urn:adsk.eagle:package:13313/1"/>
 <part name="B_SEL" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
 <part name="B_UP" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
@@ -4814,6 +4813,9 @@ W = angled&lt;p&gt;
 <part name="R19" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="10k"/>
 <part name="R20" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="10k"/>
 <part name="U$5" library="Library" deviceset="COIN" device=""/>
+<part name="TGND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
+<part name="TGND2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
+<part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -4845,8 +4847,7 @@ W = angled&lt;p&gt;
 <instance part="R6" gate="G$1" x="233.68" y="-30.48" rot="R90"/>
 <instance part="R7" gate="G$1" x="266.7" y="-30.48" rot="R90"/>
 <instance part="R8" gate="G$1" x="299.72" y="-30.48" rot="R90"/>
-<instance part="VCC" gate="G$1" x="-104.14" y="12.7"/>
-<instance part="GND" gate="G$1" x="-104.14" y="5.08"/>
+<instance part="VCC" gate="G$1" x="-35.56" y="55.88"/>
 <instance part="COLIN2" gate="G$1" x="-17.78" y="7.62" rot="R270"/>
 <instance part="B_SEL" gate="G$1" x="66.04" y="-63.5"/>
 <instance part="B_UP" gate="G$1" x="66.04" y="-71.12"/>
@@ -4862,6 +4863,9 @@ W = angled&lt;p&gt;
 <instance part="R19" gate="G$1" x="83.82" y="-55.88" rot="R90"/>
 <instance part="R20" gate="G$1" x="91.44" y="-55.88" rot="R90"/>
 <instance part="U$5" gate="G$1" x="88.9" y="55.88"/>
+<instance part="TGND" gate="G$1" x="162.56" y="7.62"/>
+<instance part="TGND2" gate="G$1" x="162.56" y="-30.48"/>
+<instance part="GND" gate="G$1" x="-35.56" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -5012,9 +5016,9 @@ W = angled&lt;p&gt;
 <label x="-27.94" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
+<wire x1="-33.02" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<label x="-30.48" y="48.26" size="1.778" layer="95"/>
 <pinref part="GND" gate="G$1" pin="P"/>
-<wire x1="-101.6" y1="5.08" x2="-88.9" y2="5.08" width="0.1524" layer="91"/>
-<label x="-99.06" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="COLIN1" gate="G$1" pin="C"/>
@@ -5033,6 +5037,11 @@ W = angled&lt;p&gt;
 <wire x1="-22.86" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-25.4" y="7.62"/>
 <label x="-33.02" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TGND2" gate="G$1" pin="P"/>
+<wire x1="165.1" y1="-30.48" x2="175.26" y2="-30.48" width="0.1524" layer="91"/>
+<label x="167.64" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5067,8 +5076,8 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="VCC" gate="G$1" pin="P"/>
-<wire x1="-101.6" y1="12.7" x2="-88.9" y2="12.7" width="0.1524" layer="91"/>
-<label x="-99.06" y="12.7" size="1.778" layer="95"/>
+<wire x1="-33.02" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
+<label x="-30.48" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
@@ -5640,6 +5649,13 @@ W = angled&lt;p&gt;
 <wire x1="0" y1="-5.08" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TGND" class="0">
+<segment>
+<pinref part="TGND" gate="G$1" pin="P"/>
+<wire x1="165.1" y1="7.62" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
+<label x="167.64" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
