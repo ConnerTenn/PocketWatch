@@ -1643,15 +1643,14 @@ design rules under a new name.</description>
 <contactref element="SV2" pad="1"/>
 <wire x1="9.9357" y1="2.9594" x2="21.9357" y2="2.9594" width="0.3048" layer="1"/>
 <wire x1="21.9357" y1="2.9594" x2="36.9357" y2="2.9594" width="0.3048" layer="1"/>
-<wire x1="36.9357" y1="2.9594" x2="40" y2="2.9594" width="0.3048" layer="1"/>
-<wire x1="40" y1="2.9594" x2="48.9357" y2="2.9594" width="0.3048" layer="1"/>
+<wire x1="36.9357" y1="2.9594" x2="48.9357" y2="2.9594" width="0.3048" layer="1"/>
 <wire x1="14.3494" y1="2.9594" x2="14" y2="2.9594" width="0.3048" layer="16"/>
-<wire x1="39.89" y1="15" x2="39.89" y2="13.10658125" width="0.3048" layer="16"/>
 <wire x1="39.89" y1="13.10658125" x2="40.0285" y2="12.96808125" width="0.3048" layer="16"/>
 <wire x1="40.0285" y1="2.9879" x2="40" y2="2.9594" width="0.3048" layer="16"/>
-<via x="40" y="2.9594" extent="1-16" drill="0.35"/>
-<wire x1="40.0285" y1="12.96808125" x2="40.0285" y2="2.9879" width="0.3048" layer="16"/>
-<wire x1="9.9357" y1="2.9594" x2="14" y2="2.9594" width="0" layer="19" extent="16-16"/>
+<wire x1="39.89" y1="13.10658125" x2="39.89" y2="15" width="0" layer="19" extent="16-16"/>
+<wire x1="40.0285" y1="2.9879" x2="40.0285" y2="12.96808125" width="0" layer="19" extent="16-16"/>
+<wire x1="36.9357" y1="2.9594" x2="40" y2="2.9594" width="0" layer="19" extent="16-16"/>
+<wire x1="14" y1="2.9594" x2="9.9357" y2="2.9594" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SEG_B_2">
 <contactref element="TUBE3" pad="3"/>
@@ -1674,10 +1673,7 @@ design rules under a new name.</description>
 <wire x1="41.59019375" y1="4.6353" x2="42.41149375" y2="5.4566" width="0.3048" layer="1"/>
 <wire x1="39.2649125" y1="5.4566" x2="40.0862125" y2="4.6353" width="0.3048" layer="1"/>
 <wire x1="40.0862125" y1="4.6353" x2="41.59019375" y2="4.6353" width="0.3048" layer="1"/>
-<wire x1="38.75" y1="7.38190625" x2="38.75" y2="5.4566" width="0.3048" layer="16"/>
-<wire x1="39.5713" y1="8.20320625" x2="38.75" y2="7.38190625" width="0.3048" layer="16"/>
-<wire x1="39.5713" y1="12.7787" x2="39.5713" y2="8.20320625" width="0.3048" layer="16"/>
-<wire x1="37.35" y1="15" x2="39.5713" y2="12.7787" width="0.3048" layer="16"/>
+<wire x1="38.2350875" y1="5.4566" x2="37.35" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_C_2">
 <contactref element="TUBE3" pad="4"/>
@@ -1700,8 +1696,7 @@ design rules under a new name.</description>
 <wire x1="41.59019375" y1="7.7221" x2="42.41149375" y2="8.5434" width="0.3048" layer="1"/>
 <wire x1="39.2649125" y1="8.5434" x2="40.0862125" y2="7.7221" width="0.3048" layer="1"/>
 <wire x1="40.0862125" y1="7.7221" x2="41.59019375" y2="7.7221" width="0.3048" layer="1"/>
-<wire x1="34.81" y1="15" x2="38.75" y2="11.06" width="0.3048" layer="16"/>
-<wire x1="38.75" y1="11.06" x2="38.75" y2="8.5434" width="0.3048" layer="16"/>
+<wire x1="38.2350875" y1="8.5434" x2="34.81" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_A_2">
 <contactref element="TUBE3" pad="5"/>
@@ -1724,8 +1719,7 @@ design rules under a new name.</description>
 <wire x1="43.40449375" y1="10.2193" x2="44.22579375" y2="11.0406" width="0.3048" layer="1"/>
 <wire x1="37.4506125" y1="11.0406" x2="38.2719125" y2="10.2193" width="0.3048" layer="1"/>
 <wire x1="38.2719125" y1="10.2193" x2="43.40449375" y2="10.2193" width="0.3048" layer="1"/>
-<wire x1="32.27" y1="15" x2="36.2294" y2="11.0406" width="0.3048" layer="16"/>
-<wire x1="36.2294" y1="11.0406" x2="36.9357" y2="11.0406" width="0.3048" layer="16"/>
+<wire x1="36.4207875" y1="11.0406" x2="32.27" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_F_2">
 <contactref element="TUBE3" pad="6"/>
@@ -1748,8 +1742,7 @@ design rules under a new name.</description>
 <wire x1="37.789975" y1="11.9944" x2="46" y2="11.9944" width="0.3048" layer="1"/>
 <wire x1="36.406125" y1="12.3191" x2="37.465275" y2="12.3191" width="0.3048" layer="1"/>
 <wire x1="37.465275" y1="12.3191" x2="37.789975" y2="11.9944" width="0.3048" layer="1"/>
-<wire x1="29.73" y1="15" x2="32.7356" y2="11.9944" width="0.3048" layer="16"/>
-<wire x1="32.7356" y1="11.9944" x2="34" y2="11.9944" width="0.3048" layer="16"/>
+<wire x1="34" y1="11.9944" x2="29.73" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_G_2">
 <contactref element="TUBE3" pad="7"/>
@@ -1773,7 +1766,7 @@ design rules under a new name.</description>
 <wire x1="35.77420625" y1="11.0406" x2="36.59550625" y2="11.8619" width="0.3048" layer="1"/>
 <wire x1="37.27589375" y1="11.8619" x2="38.09719375" y2="11.0406" width="0.3048" layer="1"/>
 <wire x1="27.19" y1="15" x2="27.19" y2="14.9149" width="0.3048" layer="16"/>
-<wire x1="27.19" y1="14.9149" x2="31.0643" y2="11.0406" width="0.3048" layer="16"/>
+<wire x1="31.0643" y1="11.0406" x2="27.19" y2="14.9149" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SEG_D_2">
 <contactref element="TUBE3" pad="8"/>
@@ -1796,8 +1789,7 @@ design rules under a new name.</description>
 <wire x1="39.91149375" y1="8.5434" x2="41.25" y2="8.5434" width="0.3048" layer="1"/>
 <wire x1="37.58850625" y1="8.5434" x2="38.40980625" y2="9.3647" width="0.3048" layer="1"/>
 <wire x1="39.09019375" y1="9.3647" x2="39.91149375" y2="8.5434" width="0.3048" layer="1"/>
-<wire x1="24.65" y1="15" x2="24.65" y2="13.1434" width="0.3048" layer="16"/>
-<wire x1="24.65" y1="13.1434" x2="29.25" y2="8.5434" width="0.3048" layer="16"/>
+<wire x1="24.09019375" y1="9.3647" x2="24.65" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_E_2">
 <contactref element="TUBE0" pad="9"/>
@@ -1820,8 +1812,7 @@ design rules under a new name.</description>
 <wire x1="39.91149375" y1="5.4566" x2="41.25" y2="5.4566" width="0.3048" layer="1"/>
 <wire x1="37.58850625" y1="5.4566" x2="38.40980625" y2="6.2779" width="0.3048" layer="1"/>
 <wire x1="39.09019375" y1="6.2779" x2="39.91149375" y2="5.4566" width="0.3048" layer="1"/>
-<wire x1="22.11" y1="15" x2="22.11" y2="12.5966" width="0.3048" layer="16"/>
-<wire x1="22.11" y1="12.5966" x2="29.25" y2="5.4566" width="0.3048" layer="16"/>
+<wire x1="23.40980625" y1="6.2779" x2="22.11" y2="15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="T1">
 <contactref element="SV5" pad="3"/>

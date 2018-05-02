@@ -1238,13 +1238,13 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="D" x="14.5" y="49" size="1.778" layer="27" display="off"/>
 <attribute name="SPICETYPE" value="diode" x="14.5" y="49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k" x="9.75" y="38.5" rot="R270">
-<attribute name="SPICEMODEL" value="NONE" x="9.75" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="9.75" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k" x="9.75" y="38.5" rot="MR270">
+<attribute name="SPICEMODEL" value="NONE" x="9.75" y="38.5" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="9.75" y="38.5" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R15" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k" x="9.75" y="33.5" rot="R90">
-<attribute name="SPICEMODEL" value="NONE" x="9.75" y="33.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="9.75" y="33.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R15" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k" x="9.75" y="33.5" rot="MR90">
+<attribute name="SPICEMODEL" value="NONE" x="9.75" y="33.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="9.75" y="33.5" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k" x="15" y="47" rot="MR180">
 <attribute name="SPICEMODEL" value="NONE" x="15" y="47" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -1883,14 +1883,14 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="R14" pad="1"/>
 <contactref element="COLIN1" pad="A"/>
-<wire x1="9.75" y1="39.922" x2="10.902" y2="38.77" width="0.2032" layer="1"/>
-<wire x1="10.902" y1="38.77" x2="11.75" y2="38.77" width="0.2032" layer="1"/>
+<wire x1="9.75" y1="39.922" x2="10.902" y2="38.77" width="0.2032" layer="16"/>
+<wire x1="10.902" y1="38.77" x2="11.75" y2="38.77" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="R15" pad="1"/>
 <contactref element="COLIN2" pad="A"/>
-<wire x1="11.75" y1="31.23" x2="10.902" y2="32.078" width="0.2032" layer="1"/>
-<wire x1="10.902" y1="32.078" x2="9.75" y2="32.078" width="0.2032" layer="1"/>
+<wire x1="11.75" y1="31.23" x2="10.902" y2="32.078" width="0.2032" layer="16"/>
+<wire x1="10.902" y1="32.078" x2="9.75" y2="32.078" width="0.2032" layer="16"/>
 </signal>
 <signal name="TGND">
 <contactref element="TGND" pad="1"/>
@@ -1933,22 +1933,48 @@ design rules under a new name.</description>
 <signal name="N$15">
 <contactref element="IC1" pad="12"/>
 <contactref element="R17" pad="2"/>
-<wire x1="10.422" y1="47" x2="28.635" y2="42.0734" width="0" layer="19" extent="1-16"/>
+<wire x1="10.422" y1="47" x2="11.5775" y2="45.8445" width="0.2032" layer="16"/>
+<wire x1="26.4055" y1="45.8445" x2="28.5" y2="43.75" width="0.2032" layer="16"/>
+<via x="28.5" y="43.75" extent="1-16" drill="0.35"/>
+<wire x1="28.5" y1="43.75" x2="28.635" y2="43.615" width="0.2032" layer="1"/>
+<wire x1="28.635" y1="43.615" x2="28.635" y2="42.0734" width="0.2032" layer="1"/>
+<wire x1="11.5775" y1="45.8445" x2="26.4055" y2="45.8445" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="IC1" pad="11"/>
 <contactref element="R16" pad="2"/>
-<wire x1="16.422" y1="47" x2="29.905" y2="42.0734" width="0" layer="19" extent="1-16"/>
+<wire x1="26.25" y1="47" x2="29.5" y2="43.75" width="0.2032" layer="16"/>
+<via x="29.5" y="43.75" extent="1-16" drill="0.35"/>
+<wire x1="29.5" y1="43.75" x2="29.905" y2="43.345" width="0.2032" layer="1"/>
+<wire x1="29.905" y1="43.345" x2="29.905" y2="42.0734" width="0.2032" layer="1"/>
+<wire x1="16.422" y1="47" x2="26.25" y2="47" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="R15" pad="2"/>
 <contactref element="IC1" pad="10"/>
-<wire x1="9.75" y1="34.922" x2="31.175" y2="42.0734" width="0" layer="19" extent="1-1"/>
+<wire x1="9.75" y1="34.922" x2="9.828" y2="35" width="0.2032" layer="16"/>
+<wire x1="9.828" y1="35" x2="13" y2="35" width="0.2032" layer="16"/>
+<wire x1="31.175" y1="40.175" x2="31.175" y2="42.0734" width="0.2032" layer="1"/>
+<wire x1="13" y1="35" x2="16" y2="38" width="0.2032" layer="16"/>
+<wire x1="16" y1="38" x2="29" y2="38" width="0.2032" layer="16"/>
+<wire x1="29" y1="38" x2="30" y2="39" width="0.2032" layer="16"/>
+<via x="30" y="39" extent="1-16" drill="0.35"/>
+<wire x1="30" y1="39" x2="31.175" y2="40.175" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="IC1" pad="9"/>
 <contactref element="R14" pad="2"/>
-<wire x1="9.75" y1="37.078" x2="32.445" y2="42.0734" width="0" layer="19" extent="1-1"/>
+<wire x1="9.75" y1="37.078" x2="11.3048375" y2="37.078" width="0.2032" layer="16"/>
+<wire x1="11.3048375" y1="37.078" x2="11.3712375" y2="37.1444" width="0.2032" layer="16"/>
+<wire x1="15.8527" y1="38.3556" x2="28.3556" y2="38.3556" width="0.2032" layer="16"/>
+<wire x1="14.6415" y1="37.1444" x2="15.8527" y2="38.3556" width="0.2032" layer="16"/>
+<wire x1="11.3712375" y1="37.1444" x2="14.6415" y2="37.1444" width="0.2032" layer="16"/>
+<wire x1="32.25" y1="41.8784" x2="32.445" y2="42.0734" width="0.2032" layer="1"/>
+<wire x1="28.3556" y1="38.3556" x2="30" y2="40" width="0.2032" layer="16"/>
+<wire x1="30" y1="40" x2="32" y2="40" width="0.2032" layer="16"/>
+<via x="32" y="40" extent="1-16" drill="0.35"/>
+<wire x1="32" y1="40" x2="32.445" y2="40.445" width="0.2032" layer="1"/>
+<wire x1="32.445" y1="40.445" x2="32.445" y2="42.0734" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="Q5" pad="3"/>
@@ -2039,12 +2065,14 @@ design rules under a new name.</description>
 <signal name="N$12">
 <contactref element="R16" pad="1"/>
 <contactref element="PM" pad="A"/>
-<wire x1="13.578" y1="47" x2="13.23" y2="49" width="0" layer="19" extent="16-16"/>
+<wire x1="13.23" y1="49" x2="13.23" y2="47.348" width="0.2032" layer="16"/>
+<wire x1="13.23" y1="47.348" x2="13.578" y2="47" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="R17" pad="1"/>
 <contactref element="AM" pad="A"/>
-<wire x1="7.23" y1="49" x2="7.578" y2="47" width="0" layer="19" extent="16-16"/>
+<wire x1="7.23" y1="49" x2="7.23" y2="47.348" width="0.2032" layer="16"/>
+<wire x1="7.23" y1="47.348" x2="7.578" y2="47" width="0.2032" layer="16"/>
 </signal>
 </signals>
 </board>
