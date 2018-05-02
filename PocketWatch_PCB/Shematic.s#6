@@ -4899,7 +4899,7 @@ W = angled&lt;p&gt;
 <part name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="12pF"/>
 <part name="6PF" library="Library" deviceset="CFS206" device=""/>
 <part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="12pF"/>
-<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
+<part name="BATT+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA08-1" device="" package3d_urn="urn:adsk.eagle:package:8343/1"/>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA08-1" device="" package3d_urn="urn:adsk.eagle:package:8343/1"/>
@@ -4921,15 +4921,15 @@ W = angled&lt;p&gt;
 <part name="U$6" library="Library" deviceset="TPS61030" device=""/>
 <part name="C9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="220uF"/>
 <part name="C10" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1uF"/>
-<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
-<part name="COLIN2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
-<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
-<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
-<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
-<part name="AM" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
-<part name="PM" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
-<part name="COLIN1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
+<part name="VCC" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
+<part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1"/>
+<part name="COLIN2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="LD260" package3d_urn="urn:adsk.eagle:package:13313/1"/>
+<part name="B_SEL" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
+<part name="B_UP" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
+<part name="B_DOWN" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="2,54/1,1" package3d_urn="urn:adsk.eagle:package:30836/1" value="WIREPAD"/>
+<part name="AM" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="LD260" package3d_urn="urn:adsk.eagle:package:13313/1"/>
+<part name="PM" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="LD260" package3d_urn="urn:adsk.eagle:package:13313/1"/>
+<part name="COLIN1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="LD260" package3d_urn="urn:adsk.eagle:package:13313/1"/>
 <part name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
 <part name="R15" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
 <part name="R16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
@@ -4960,7 +4960,7 @@ W = angled&lt;p&gt;
 <instance part="C1" gate="G$1" x="33.02" y="66.04" rot="R270"/>
 <instance part="6PF" gate="A" x="45.72" y="73.66" rot="R270"/>
 <instance part="C2" gate="G$1" x="33.02" y="81.28" rot="R270"/>
-<instance part="PAD1" gate="G$1" x="-104.14" y="20.32"/>
+<instance part="BATT+" gate="G$1" x="-104.14" y="20.32"/>
 <instance part="SV1" gate="1" x="124.46" y="10.16" rot="R180"/>
 <instance part="SV3" gate="1" x="162.56" y="20.32"/>
 <instance part="SV2" gate="1" x="165.1" y="53.34" rot="R180"/>
@@ -4982,12 +4982,12 @@ W = angled&lt;p&gt;
 <instance part="U$6" gate="G$1" x="-78.74" y="86.36"/>
 <instance part="C9" gate="G$1" x="-17.78" y="76.2"/>
 <instance part="C10" gate="G$1" x="-27.94" y="76.2"/>
-<instance part="PAD2" gate="G$1" x="-104.14" y="12.7"/>
-<instance part="PAD3" gate="G$1" x="-104.14" y="5.08"/>
+<instance part="VCC" gate="G$1" x="-104.14" y="12.7"/>
+<instance part="GND" gate="G$1" x="-104.14" y="5.08"/>
 <instance part="COLIN2" gate="G$1" x="-17.78" y="7.62" rot="R270"/>
-<instance part="PAD4" gate="G$1" x="66.04" y="-63.5"/>
-<instance part="PAD5" gate="G$1" x="66.04" y="-71.12"/>
-<instance part="PAD6" gate="G$1" x="66.04" y="-78.74"/>
+<instance part="B_SEL" gate="G$1" x="66.04" y="-63.5"/>
+<instance part="B_UP" gate="G$1" x="66.04" y="-71.12"/>
+<instance part="B_DOWN" gate="G$1" x="66.04" y="-78.74"/>
 <instance part="AM" gate="G$1" x="-17.78" y="0" rot="R270"/>
 <instance part="PM" gate="G$1" x="-17.78" y="-7.62" rot="R270"/>
 <instance part="COLIN1" gate="G$1" x="-17.78" y="15.24" rot="R270"/>
@@ -5205,7 +5205,7 @@ W = angled&lt;p&gt;
 <junction x="-27.94" y="58.42"/>
 </segment>
 <segment>
-<pinref part="PAD3" gate="G$1" pin="P"/>
+<pinref part="GND" gate="G$1" pin="P"/>
 <wire x1="-101.6" y1="5.08" x2="-88.9" y2="5.08" width="0.1524" layer="91"/>
 <label x="-99.06" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -5291,7 +5291,7 @@ W = angled&lt;p&gt;
 <junction x="-27.94" y="86.36"/>
 </segment>
 <segment>
-<pinref part="PAD2" gate="G$1" pin="P"/>
+<pinref part="VCC" gate="G$1" pin="P"/>
 <wire x1="-101.6" y1="12.7" x2="-88.9" y2="12.7" width="0.1524" layer="91"/>
 <label x="-99.06" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -5779,7 +5779,7 @@ W = angled&lt;p&gt;
 <label x="-134.62" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PAD1" gate="G$1" pin="P"/>
+<pinref part="BATT+" gate="G$1" pin="P"/>
 <wire x1="-101.6" y1="20.32" x2="-88.9" y2="20.32" width="0.1524" layer="91"/>
 <label x="-99.06" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -5844,7 +5844,7 @@ W = angled&lt;p&gt;
 <label x="104.14" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PAD4" gate="G$1" pin="P"/>
+<pinref part="B_SEL" gate="G$1" pin="P"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="-63.5" x2="76.2" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-63.5" x2="76.2" y2="-60.96" width="0.1524" layer="91"/>
@@ -5860,7 +5860,7 @@ W = angled&lt;p&gt;
 <label x="104.14" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PAD5" gate="G$1" pin="P"/>
+<pinref part="B_UP" gate="G$1" pin="P"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="-71.12" x2="83.82" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-71.12" x2="83.82" y2="-60.96" width="0.1524" layer="91"/>
@@ -5876,7 +5876,7 @@ W = angled&lt;p&gt;
 <label x="104.14" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PAD6" gate="G$1" pin="P"/>
+<pinref part="B_DOWN" gate="G$1" pin="P"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="-78.74" x2="91.44" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-78.74" x2="91.44" y2="-60.96" width="0.1524" layer="91"/>
