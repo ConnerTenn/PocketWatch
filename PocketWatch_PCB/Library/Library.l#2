@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.033333" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -463,6 +463,19 @@
 <vertex x="1.5" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
+</package>
+<package name="COIN">
+<smd name="V+" x="0" y="-1.5" dx="3.6" dy="3" layer="1"/>
+<smd name="V-" x="0" y="19.9" dx="3" dy="3" layer="1"/>
+<wire x1="-6.5" y1="2.3" x2="-6.5" y2="20.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="2.3" x2="6.5" y2="20.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="20.5" x2="6.5" y2="20.5" width="0.1524" layer="21" curve="-71.075356"/>
+<wire x1="6.5" y1="2.3" x2="-6.5" y2="2.3" width="0.1524" layer="21" curve="-71.075356"/>
+<wire x1="-4" y1="1" x2="4" y2="1" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="1.6" x2="-5.5" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="-1" x2="5.5" y2="-1" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="-1" x2="5.5" y2="1.6" width="0.1524" layer="21"/>
+<circle x="0" y="11.4" radius="0.3" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
