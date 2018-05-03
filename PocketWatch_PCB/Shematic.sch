@@ -4736,8 +4736,6 @@ Based on the following sources:
 <approved hash="104,1,27.94,17.78,U2,AVCC,VCC,,,"/>
 <approved hash="106,1,165.1,-7.62,TGND,,,,,"/>
 <approved hash="113,1,119.422,7.33044,SV1,,,,,"/>
-<approved hash="113,1,167.598,5.36956,SV3,,,,,"/>
-<approved hash="113,1,175.218,-30.1904,SV2,,,,,"/>
 <approved hash="113,1,167.598,53.6296,SV5,,,,,"/>
 <approved hash="113,1,-45.7623,-45.4304,SV6,,,,,"/>
 <approved hash="113,1,-46.99,-5.40173,COLIN2,,,,,"/>

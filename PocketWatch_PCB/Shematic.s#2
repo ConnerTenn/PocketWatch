@@ -441,6 +441,18 @@
 <text x="6.5" y="1.25" size="1.016" layer="21">1</text>
 <text x="-7.5" y="1.25" size="1.016" layer="21">8</text>
 </package>
+<package name="H04">
+<pad name="1" x="2.936" y="0" drill="0.8" diameter="1.6764" rot="R180"/>
+<pad name="2" x="0.936" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="3" x="-1.064" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="4" x="-3.064" y="0" drill="0.8" diameter="1.6764"/>
+<wire x1="2.936" y1="-1" x2="-3.063" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-3.063" y1="1" x2="2.936" y2="1" width="0.1524" layer="21"/>
+<wire x1="-3.063" y1="-1" x2="-3.063" y2="1" width="0.1524" layer="21" curve="-180"/>
+<wire x1="2.936" y1="1" x2="2.936" y2="-1" width="0.1524" layer="21" curve="-180"/>
+<text x="2.436" y="1.25" size="1.016" layer="21">1</text>
+<text x="-3.309" y="1.25" size="1.016" layer="21">4</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IV-9">
@@ -549,8 +561,22 @@
 <wire x1="2.54" y1="2.54" x2="1.778" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.6096" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="1.778" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="1.524" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="1.524" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.778" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.016" y2="-7.62" width="0.6096" layer="94"/>
+</symbol>
+<symbol name="H04">
+<pin name="4" x="7.62" y="5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="3" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<wire x1="-0.762" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-0.762" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-5.08" x2="-0.762" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="1.778" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.778" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.6096" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -693,6 +719,24 @@
 <connect gate="G$1" pin="6" pad="3"/>
 <connect gate="G$1" pin="7" pad="2"/>
 <connect gate="G$1" pin="8" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H04">
+<gates>
+<gate name="G$1" symbol="H04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H04">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3706,7 +3750,7 @@ Based on the following sources:
 <part name="6PF" library="Library" deviceset="CFS206" device=""/>
 <part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="12pF"/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA08-1" device="" package3d_urn="urn:adsk.eagle:package:8343/1"/>
-<part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
+<part name="SV3" library="Library" deviceset="H04" device=""/>
 <part name="SV2" library="Library" deviceset="H08" device=""/>
 <part name="SV5" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="SV6" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
@@ -3765,7 +3809,7 @@ Based on the following sources:
 <instance part="6PF" gate="A" x="45.72" y="73.66" rot="R270"/>
 <instance part="C2" gate="G$1" x="33.02" y="81.28" rot="R270"/>
 <instance part="SV1" gate="1" x="124.46" y="10.16" rot="R180"/>
-<instance part="SV3" gate="1" x="162.56" y="5.08"/>
+<instance part="SV3" gate="G$1" x="162.56" y="2.54"/>
 <instance part="SV2" gate="G$1" x="170.18" y="-33.02"/>
 <instance part="SV5" gate="1" x="162.56" y="53.34"/>
 <instance part="SV6" gate="1" x="-50.8" y="-45.72"/>
@@ -4371,7 +4415,7 @@ Based on the following sources:
 <label x="210.82" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="1" pin="4"/>
+<pinref part="SV3" gate="G$1" pin="4"/>
 <wire x1="170.18" y1="7.62" x2="180.34" y2="7.62" width="0.1524" layer="91"/>
 <label x="172.72" y="7.62" size="1.778" layer="95"/>
 </segment>
@@ -4384,7 +4428,7 @@ Based on the following sources:
 <label x="243.84" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="1" pin="3"/>
+<pinref part="SV3" gate="G$1" pin="3"/>
 <wire x1="170.18" y1="5.08" x2="180.34" y2="5.08" width="0.1524" layer="91"/>
 <label x="172.72" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -4397,7 +4441,7 @@ Based on the following sources:
 <label x="276.86" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="1" pin="2"/>
+<pinref part="SV3" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="2.54" x2="180.34" y2="2.54" width="0.1524" layer="91"/>
 <label x="172.72" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -4410,7 +4454,7 @@ Based on the following sources:
 <label x="309.88" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV3" gate="1" pin="1"/>
+<pinref part="SV3" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="0" x2="180.34" y2="0" width="0.1524" layer="91"/>
 <label x="172.72" y="0" size="1.778" layer="95"/>
 </segment>
