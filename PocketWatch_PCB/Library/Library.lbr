@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -505,6 +505,19 @@
 <text x="2.436" y="1.25" size="1.016" layer="21">1</text>
 <text x="-3.309" y="1.25" size="1.016" layer="21">4</text>
 </package>
+<package name="H05">
+<pad name="1" x="4" y="0" drill="0.8" diameter="1.6764" rot="R180"/>
+<pad name="2" x="2" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="3" x="0" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="4" x="-2" y="0" drill="0.8" diameter="1.6764"/>
+<pad name="5" x="-4" y="0" drill="0.8" diameter="1.6764"/>
+<wire x1="3.952" y1="-1" x2="-4.079" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-4.079" y1="1" x2="3.952" y2="1" width="0.1524" layer="21"/>
+<wire x1="-4.079" y1="-1" x2="-4.079" y2="1" width="0.1524" layer="21" curve="-170.580362"/>
+<wire x1="3.952" y1="1" x2="3.952" y2="-1" width="0.1524" layer="21" curve="-185.370409"/>
+<text x="3.702" y="1.25" size="1.016" layer="21">1</text>
+<text x="-4.25" y="1.25" size="1.016" layer="21">5</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IV-9">
@@ -690,6 +703,22 @@
 <wire x1="2.54" y1="2.54" x2="1.778" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.6096" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.6096" layer="94"/>
+</symbol>
+<symbol name="H05">
+<pin name="5" x="7.62" y="5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<wire x1="-0.762" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-0.762" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-7.62" x2="-0.762" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="1.778" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.778" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.778" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.016" y2="-5.08" width="0.6096" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -950,6 +979,25 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H05">
+<gates>
+<gate name="G$1" symbol="H05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H05">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
