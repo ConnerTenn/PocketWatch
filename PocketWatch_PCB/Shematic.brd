@@ -1503,7 +1503,7 @@ design rules under a new name.</description>
 <vertex x="44" y="52"/>
 <vertex x="44" y="24"/>
 <vertex x="39" y="19"/>
-<vertex x="-1" y="19"/>
+<vertex x="0" y="19"/>
 <vertex x="0" y="56"/>
 <vertex x="3" y="56"/>
 </polygon>
@@ -1572,7 +1572,8 @@ design rules under a new name.</description>
 <wire x1="12.3584" y1="44.3584" x2="14.1423" y2="46.1423" width="0.508" layer="1"/>
 <wire x1="11.75" y1="33.77" x2="10.23" y2="33.77" width="0.508" layer="1"/>
 <wire x1="5.422" y1="38.578" x2="5.422" y2="40" width="0.508" layer="1"/>
-<wire x1="10.23" y1="33.77" x2="5.422" y2="38.578" width="0.508" layer="1"/>
+<wire x1="10.23" y1="33.77" x2="7.5" y2="36.5" width="0.508" layer="1"/>
+<wire x1="7.5" y1="36.5" x2="5.422" y2="38.578" width="0.508" layer="1"/>
 <wire x1="26.55" y1="27.1" x2="26" y2="26.55" width="0.508" layer="1"/>
 <wire x1="26" y1="26.55" x2="26" y2="25.5" width="0.508" layer="1"/>
 <via x="26" y="25.5" extent="1-16" drill="0.45"/>
@@ -1615,6 +1616,19 @@ design rules under a new name.</description>
 <wire x1="37" y1="33" x2="33.5" y2="36.5" width="0.508" layer="1"/>
 <wire x1="33.5" y1="45.922" x2="35" y2="47.422" width="0.508" layer="1"/>
 <wire x1="33.5" y1="36.5" x2="33.5" y2="45.922" width="0.508" layer="1"/>
+<via x="7.5" y="36.5" extent="1-16" drill="0.45"/>
+<wire x1="7.5" y1="36.5" x2="7.5" y2="33.25" width="0.508" layer="16"/>
+<wire x1="7.5" y1="33.25" x2="7" y2="32.75" width="0.508" layer="16"/>
+<via x="7" y="32.75" extent="1-16" drill="0.45"/>
+<wire x1="18.25" y1="28.25" x2="17.35959375" y2="28.25" width="0.508" layer="1"/>
+<wire x1="17.35959375" y1="28.25" x2="16.82499375" y2="27.7154" width="0.508" layer="1"/>
+<wire x1="16.82499375" y1="27.7154" x2="15.2846" y2="27.7154" width="0.508" layer="1"/>
+<wire x1="12.8368" y1="30.1632" x2="11.3081125" y2="30.1632" width="0.508" layer="1"/>
+<wire x1="11.3081125" y1="30.1632" x2="9.8349125" y2="31.6364" width="0.508" layer="1"/>
+<wire x1="15.2846" y1="27.7154" x2="12.8368" y2="30.1632" width="0.508" layer="1"/>
+<wire x1="7.38689375" y1="32.75" x2="7" y2="32.75" width="0.508" layer="1"/>
+<wire x1="8.50049375" y1="31.6364" x2="7.38689375" y2="32.75" width="0.508" layer="1"/>
+<wire x1="9.8349125" y1="31.6364" x2="8.50049375" y2="31.6364" width="0.508" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U2" pad="15"/>
