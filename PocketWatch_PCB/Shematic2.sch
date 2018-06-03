@@ -3368,6 +3368,8 @@ Based on the following sources:
 <part name="AM" library="Library" deviceset="LED" device=""/>
 <part name="TGND" library="Library" deviceset="H01" device=""/>
 <part name="TGND2" library="Library" deviceset="H01" device=""/>
+<part name="C4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="10uF"/>
+<part name="C5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3427,6 +3429,8 @@ Based on the following sources:
 <instance part="AM" gate="G$1" x="-45.72" y="-20.32" rot="MR0"/>
 <instance part="TGND" gate="G$1" x="162.56" y="-7.62"/>
 <instance part="TGND2" gate="G$1" x="162.56" y="40.64"/>
+<instance part="C4" gate="G$1" x="10.16" y="7.62"/>
+<instance part="C5" gate="G$1" x="-33.02" y="-66.04"/>
 </instances>
 <busses>
 </busses>
@@ -3532,6 +3536,9 @@ Based on the following sources:
 <pinref part="IC1" gate="B" pin="G"/>
 <wire x1="7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="10.16" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="MCP7940M" gate="G$1" pin="P$4"/>
@@ -3587,8 +3594,11 @@ Based on the following sources:
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-5.08" y1="-66.04" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-66.04" x2="-27.94" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-17.78" y="-66.04" size="1.778" layer="95"/>
+<wire x1="-27.94" y1="-66.04" x2="-27.94" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-71.12" x2="-33.02" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -3598,9 +3608,11 @@ Based on the following sources:
 <wire x1="25.4" y1="17.78" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="VCC"/>
 <wire x1="25.4" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="15.24" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 <junction x="25.4" y="15.24"/>
 <label x="17.78" y="15.24" size="1.778" layer="95"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="86.36" y="78.74" size="1.778" layer="95"/>
@@ -3690,11 +3702,12 @@ Based on the following sources:
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="-5.08" y1="-63.5" x2="-10.16" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="ENA"/>
-<wire x1="-10.16" y1="-63.5" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="-73.66" x2="-10.16" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-73.66" x2="-10.16" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-63.5"/>
 <label x="-17.78" y="-63.5" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="-63.5" x2="-10.16" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
